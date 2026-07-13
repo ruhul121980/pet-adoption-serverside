@@ -10,7 +10,12 @@ import registerRouter from './api/register.js';
 import uploadImgRouter from './api/upload-image.js';
 import createAdoptionRouter from './api/create-adoption.js';
 import allAdoptionsRouter from './api/all-adoptions.js';
+<<<<<<< HEAD
 
+=======
+// import allVeterinarianRouter from './api/all-veterinarian';
+// import veterinarianRouter from './api/veterinarian';
+>>>>>>> 7194bb4054725911860dba30f97016b5a3714ba2
 
 
 const app = express();
