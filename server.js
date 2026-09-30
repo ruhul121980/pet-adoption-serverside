@@ -9,6 +9,21 @@ import loginRouter from './api/login.js';
 import registerRouter from './api/register.js';
 import uploadImgRouter from './api/upload-image.js';
 import createAdoptionRouter from './api/create-adoption.js';
+<<<<<<< HEAD
+=======
+import allAdoptionsRouter from './api/all-adoptions.js';
+<<<<<<< HEAD
+// import allVeterinarianRouter from './api/all-veterinarian';
+// import veterinarianRouter from './api/veterinarian';
+=======
+<<<<<<< HEAD
+
+=======
+// import allVeterinarianRouter from './api/all-veterinarian';
+// import veterinarianRouter from './api/veterinarian';
+>>>>>>> 7194bb4054725911860dba30f97016b5a3714ba2
+>>>>>>> e1d2019ae53c767628e5d7324646d34bdcae68e1
+>>>>>>> ef13ab51e0c5ce9bc245632f56bfd4fc905b9a9e
 
 
 const app = express();
@@ -18,6 +33,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use(cors({ origin: '*' }));
 app.use(bodyParser.json());
 
+<<<<<<< HEAD
 
 
 
@@ -30,6 +46,11 @@ app.use(bodyParser.json());
 // // Mount all routers on the '/api' path
 app.use('/api', loginRouter);
 // app.use('/api', allAdoptionsRouter);
+=======
+ 
+app.use('/api', loginRouter);
+app.use('/api', allAdoptionsRouter);
+>>>>>>> ef13ab51e0c5ce9bc245632f56bfd4fc905b9a9e
 app.use('/api', registerRouter);
 app.use('/api', createAdoptionRouter);
 app.use('/api', uploadImgRouter);

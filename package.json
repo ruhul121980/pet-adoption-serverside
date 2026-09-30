@@ -11,6 +11,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+=======
+>>>>>>> e1d2019ae53c767628e5d7324646d34bdcae68e1
+>>>>>>> ef13ab51e0c5ce9bc245632f56bfd4fc905b9a9e
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",

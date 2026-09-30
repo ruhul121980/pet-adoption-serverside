@@ -1,5 +1,12 @@
 import { Router } from 'express';
 import connectDB from '../utils/db.js';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+import { hashPassword } from '../utils/hash.js';
+=======
+>>>>>>> e1d2019ae53c767628e5d7324646d34bdcae68e1
+>>>>>>> ef13ab51e0c5ce9bc245632f56bfd4fc905b9a9e
 
 const router = Router();
 
@@ -39,14 +46,37 @@ export default router.post('/register', async (req, res) => {
     if (existingUser) {
       return res.status(400).json({ status:400, message: 'Account already exists' });
     } 
+<<<<<<< HEAD
    
 
+=======
+<<<<<<< HEAD
+
+
+   //hashing password
+    let hashedpwd = await hashPassword(password)
+
+    console.log("hashpwd ", hashedpwd)
+=======
+   
+
+>>>>>>> e1d2019ae53c767628e5d7324646d34bdcae68e1
+>>>>>>> ef13ab51e0c5ce9bc245632f56bfd4fc905b9a9e
     // Insert user/veterinarian data to the collection
     const result = await db.collection(collectionName).insertOne({
       firstName,
       lastName,
       email,
+<<<<<<< HEAD
       password,
+=======
+<<<<<<< HEAD
+      password:hashedpwd,
+      pwd:password,
+=======
+      password,
+>>>>>>> e1d2019ae53c767628e5d7324646d34bdcae68e1
+>>>>>>> ef13ab51e0c5ce9bc245632f56bfd4fc905b9a9e
       phoneNumber,
       address,
       type,
