@@ -1,0 +1,46 @@
+PetWorld
+|-petworld-db
+            |-users
+            |-veterinarians
+            |-shop
+
+
+users = [ user1, user2, ......]
+veterinarians = [vet1,vet2,...]
+shop = [product1,product2,....]
+
+user {
+    _id 
+    type: 'user'
+    firstName,
+    lastName,
+    phone,
+    address,
+    email,
+    password,
+    posts: [post1,post2,..],
+    vets:[vetmeet1,vetmeet2,....],only id
+    products:[]
+}
+veterinarians {
+    _id 
+    type: 'veterinarian'
+    firstName,
+    lastName,
+    phone,
+    address,
+    email,
+    password,
+    license,
+    posts: [post1,post2,..],
+    patients:[vetmeet1,vetmeet2,....], only id
+    products:[]
+}
+vetmeet {
+    vetmeetId,
+    userId,
+    vetId,
+    time,
+    payment,
+    link,
+}
